@@ -17,6 +17,14 @@ public class HomeController : Controller
     {
         return View();
     }
+    public IActionResult About()
+    {
+        ViewData["Name"] = "Lith";
+        ViewData["Surname"] = "Verhen";
+        ViewData["Age"] = 26;
+        ViewData["Profession"] = "Supreme Magus";
+        return View();
+    }
 
     public IActionResult Privacy()
     {
